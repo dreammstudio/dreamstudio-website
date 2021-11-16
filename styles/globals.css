@@ -1,0 +1,17 @@
+/* 
+BACKGROUND => #0D0C1D
+PRIMARY => #161B33
+Secondary => #282f4c
+Button => #6063ff
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #0D0C1D;
+}
