@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="og:title" content={`dream's website`} />
           <meta name="og:type" content="website" />
           <meta name="og:site_name" content="dreamstudio.me" />
-          <meta name="og:description" content="dream#3387's portfolio" />
+          <meta name="og:description" content={`dream#3387's portfolio`} />
           <meta name="og:image" content="/images/ogimage" />
       </Head>
   <Component {...pageProps} />
