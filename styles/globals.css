@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 body {
     background-color: #0D0C1D;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+}
+* {
+    font-family:'Poppins',sans-serif
 }
