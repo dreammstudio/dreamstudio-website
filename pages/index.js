@@ -32,6 +32,8 @@ function HomePage() {
       <br/>
       {projects ? <Projects projects={projects}/> : <SkeletonProjects/>}
       </div>
+      <hr className='opacity-60'/>
+      <p className='opacity-80 justify-center flex items-center gap-4 mt-2'>Powered By <img className='bg-white p-2' width={75} src="/vercel.svg"></img></p>
     </div>
   )
 }
