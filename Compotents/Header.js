@@ -7,7 +7,7 @@ function Header() {
       <p className="text-center text-xl font-bold">
         This website open source on{" "}
         <span onClick={() => {
-            router.push("https://github.com");
+            router.push("https://github.com/dreammstudio/dreamstudio-website");
         }} className="text-black hover:text-white transition-all cursor-pointer">
           Github
         </span>
