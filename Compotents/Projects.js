@@ -12,7 +12,7 @@ function Projects({projects}) {
           <div className="bg-primary hover:scale-105 transition-all p-4 relative" key={project.id} onClick={() => router.push(project.html_url)}>
             <p 
             onClick={() => router.push(project.html_url)}
-            className="absolute right-4 transition-all flex gap-2 items-center top-4 hover:bg-purple-600 cursor-pointer border border-purple-600 rounded px-2">
+            className="absolute right-4 transition-all flex gap-2 items-center top-4 hover:bg-purple-600 cursor-pointer border border-purple-600 rounded-lg px-2">
              <img src="/images/star.png" className="w-4 h-4"></img> {project.stargazers_count}
             </p>
             <p className="text-2xl font-bold text-purple-600">{project.name}</p>

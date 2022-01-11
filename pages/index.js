@@ -24,16 +24,14 @@ function HomePage() {
     },[data,repos])
   return (
     <div>
-      <Header/>
       <NavigationBar/>
-      <div className='pr-8 pl-8 pt-4 pb-4 mt-8'>
+      <div className='pr-8 pl-8  md:pr-24 md:pl-24 pt-8 pb-8 mt-8'>
       {profile ? <Profile profile={profile}/> : <SkeletonProfile/>}
       <Technologies/>
       <br/>
       {projects ? <Projects projects={projects}/> : <SkeletonProjects/>}
       </div>
-      <hr className='opacity-60'/>
-      <p className='opacity-80 justify-center flex items-center gap-4 mt-2'>Powered By <img className='bg-white p-2' width={75} src="/vercel.svg"></img></p>
+      <Header/>
     </div>
   )
 }

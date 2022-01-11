@@ -2,16 +2,22 @@ import React from 'react'
 import Link from 'next/link'
 function NavigationBar() {
     return (
-        <div className='bg-primary w-3/4 flex justify-around p-2 rounded mx-auto'>
+        <div className='bg-primary w-full md:w-3/4 mx-auto p-2 rounded flex items-center'>
+            <div className='flex items-center gap-2'>
+                <img src="/images/dream.png" className='w-12'></img>
+                <h1 className=' text-lg md:text-xl font-semibold'>dream's website</h1>
+            </div>
+            <div className='flex gap-4 ml-auto mr-8'>
             <Link href="#projects">
-            <a className='opacity-80 hover:opacity-100 transition-all'>Projects</a>
+            <a className='opacity-80 hover:opacity-100 transition-all text-lg sm:text-xl font-semibold'>Projects</a>
             </Link>
-            <Link href="#" disabled={true}>
-            <a className='opacity-50 text-red-600 cursor-not-allowed'>Blog #soon</a>
+            <Link href="" disabled={true}>
+            <a className='opacity-50 text-red-600 cursor-not-allowed text-lg sm:text-xl font-semibold'>Blog #soon</a>
             </Link>
             <Link href="/donate">
-            <a className='opacity-80 hover:opacity-100 transition-all'>Donate</a>
+            <a className='opacity-80 hover:opacity-100 transition-all text-lg sm:text-xl font-semibold'>Donate</a>
             </Link>
+            </div>
         </div>
     )
 }

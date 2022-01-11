@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 function Header() {
   const router = useRouter();
   return (
-    <div className="bg-button w-full mb-6">
+    <div className="bg-button w-full">
       <p className="text-center text-xl font-bold">
         This website open source on{" "}
         <span onClick={() => {

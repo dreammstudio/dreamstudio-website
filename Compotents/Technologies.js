@@ -14,7 +14,7 @@ function Technologies() {
                         <div
                          key={index} 
                          onClick={() => router.push(item.url)}
-                         className="flex flex-col items-center justify-center bg-primary rounded p-4 hover:scale-105 cursor-pointer transition-all">
+                         className="flex flex-col items-center justify-center bg-primary rounded-lg p-4 hover:scale-105 cursor-pointer transition-all">
                             <img src={item.logo} className="max-w-20 max-h-20"/>
                             <h1 className="text-2xl font-bold mt-4">{item.name}</h1>
                         </div>

@@ -10,7 +10,7 @@ function Profile({profile}) {
             />
             <span>
             <h1 className='text-4xl font-bold leading-tight text-center sm:text-left'>{profile.discord_user.username + "#" + profile.discord_user.discriminator}</h1>
-            <p className='opacity-75 text-center sm:text-left w-3/4 break-all'>I am a student from Turkey I have been in coding since 2019. I am a newbie full stack developer. I have been working on web development for the last 1 years.</p>
+            <p className='opacity-75 mx-auto sm:mx-0 text-center sm:text-left sm:w-3/4 break-all'>I am a student from Turkey I have been in coding since 2019. I am a newbie full stack developer. I have been working on web development for the last 1 years.</p>
             <iframe
     src={`https://linkcord.swoth.xyz/api/v1/widget/${profile.discord_user.id}?type=spotify&theme=dark`}
     width="350"
