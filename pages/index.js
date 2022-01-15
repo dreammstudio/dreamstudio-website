@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from '../Compotents/Header'
-import NavigationBar from '../Compotents/NavigationBar.js'
 import {useState,useEffect} from 'react'
 import useSWR from 'swr'
 const fetcher = (url) => fetch(url).then(r => r.json())
@@ -24,14 +22,12 @@ function HomePage() {
     },[data,repos])
   return (
     <div>
-      <NavigationBar/>
-      <div className='pr-8 pl-8  md:pr-24 md:pl-24 pt-8 pb-8 mt-8'>
+      <div className='container mx-auto pr-8 pl-8  md:pr-24 md:pl-24 pt-8 pb-8 mt-8'>
       {profile ? <Profile profile={profile}/> : <SkeletonProfile/>}
       <Technologies/>
       <br/>
-      {projects ? <Projects projects={projects}/> : <SkeletonProjects/>}
+      {projects ? <Projects id="projects" projects={projects}/> : <SkeletonProjects/>}
       </div>
-      <Header/>
     </div>
   )
 }
