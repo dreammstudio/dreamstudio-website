@@ -10,8 +10,8 @@ import SkeletonProjects from '../Compotents/SkeletonProjects'
 function HomePage() {
     const [profile,setProfile] = useState(undefined)
     const [projects,setProjects] = useState(undefined)
-    const {data,error} = useSWR('https://api.lanyard.rest/v1/users/432570314120101889',fetcher)
-    const {data:repos,error:errorProjects} = useSWR('https://api.github.com/users/dreammstudio/repos',fetcher)
+    const {data,error} = useSWR('https://api.lanyard.rest/v1/users/432570314120101889',fetcher,{revalidateIfStale: false,refreshInterval:1000,refreshWhenOffline:false})
+    const {data:repos,error:errorProjects} = useSWR('https://api.github.com/users/dreammstudio/repos',fetcher,{refreshInterval:5000})
     useEffect(() => {
         if(data) {
             setProfile(data.data)
