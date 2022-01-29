@@ -10,7 +10,7 @@ function SkeletonProjects() {
             <div className='grid grid-cols sm:grid-cols-2 gap-8'>
             {
             [0,1,2,3,4,5,6,7].map((index) => (
-                <div className='bg-primary p-4 relative' key={index}>
+                <div className='bg-primary p-4 relative' data-aos="fade" key={index}>
                     <p className='absolute right-2 top-2'><Skeleton width={50} height={20}/></p>
                     <Skeleton width={"50%"} height={30}></Skeleton>
                     <br/>

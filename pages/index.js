@@ -22,8 +22,8 @@ function HomePage() {
     },[data,repos])
   return (
     <div>
-      <div className='container mx-auto pr-8 pl-8  md:pr-24 md:pl-24 pt-8 pb-8 mt-8'>
-      {profile ? <Profile profile={profile}/> : <SkeletonProfile/>}
+      <div className='container mx-auto pr-8 pl-8  md:pr-24 md:pl-24 pt-8 pb-8 mt-8' data-aos="fade">
+      {profile ? <Profile profile={profile} /> : <SkeletonProfile/>}
       <Technologies/>
       <br/>
       {projects ? <Projects id="projects" projects={projects}/> : <SkeletonProjects/>}

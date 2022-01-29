@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 function NavigationBar() {
     return (
-        <div className='w-full md:w-3/4 mx-auto p-2 rounded flex items-center'>
+        <div data-aos="fade-down" className='w-full md:w-3/4 mx-auto p-2 rounded flex items-center'>
             <Link href="/">
             <div className='flex items-center gap-2 cursor-pointer'>
                 <img src="/images/dream.png" className='w-12'></img>

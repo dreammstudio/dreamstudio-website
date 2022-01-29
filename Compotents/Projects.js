@@ -2,14 +2,15 @@ import React from "react";
 import useSWR from "swr";
 const fetcher = (url) => fetch(url).then((r) => r.json());
 import { useRouter } from "next/router";
+import Aos from 'aos'
 function Projects({projects}) {
     const router = useRouter()
   return (
     <div id="projects">
       <h1 className="text-4xl font-bold text-center mb-8">Projects:</h1>
-      <div className="grid grid-cols sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols sm:grid-cols-2 gap-8" data-aos="fade-up">
         {projects.map((project) => (
-          <div className="bg-primary hover:scale-105 transition-all p-4 relative" key={project.id} onClick={() => router.push(project.html_url)}>
+          <div data-aos="fade" className="bg-primary hover:scale-105 transition-all p-4 relative" key={project.id} onClick={() => router.push(project.html_url)}>
             <p 
             onClick={() => router.push(project.html_url)}
             className="absolute z-50 right-4 transition-all flex gap-2 items-center top-4 hover:bg-purple-600 cursor-pointer border border-purple-600 rounded-lg px-2">

@@ -5,7 +5,13 @@ import "react-loading-skeleton/dist/skeleton.css";
 import Header from '../Compotents/Header'
 import NavigationBar from '../Compotents/NavigationBar.js'
 import NextNprogress from 'nextjs-progressbar';
+import {useEffect} from 'react'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    Aos.init({duration:1000})
+  },[])
   return (
     <>
       <Head>

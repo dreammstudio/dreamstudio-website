@@ -5,6 +5,7 @@ function SkeletonProfile() {
         <SkeletonTheme
           baseColor="#282f4c"
           highlightColor="#6063ff"
+          data-aos="fade"
         >
             <div className="flex-auto sm:gap-4 sm:flex">
          <p className="text-center sm:text-left"><Skeleton width={200} height={200} className="sm:mr-8 mb-3"/></p>
